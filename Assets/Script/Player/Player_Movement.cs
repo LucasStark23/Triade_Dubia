@@ -8,7 +8,6 @@ public class Player_Movement : MonoBehaviour
     public float turnSpeed;
     public float jumpForce;
     public float runSpeed;
-
     private bool isGrounded;
 
     // Start is called before the first frame update
@@ -31,13 +30,23 @@ public class Player_Movement : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
-
-    void MovePlayer()
+    public struct MovementInfo
+    {
+        public Vector3 movement; // O movimento calculado
+        public bool isMoving;    // Se o jogador está se movendo ou não
+    }
+    public MovementInfo MovePlayer()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
         Vector3 movement = new Vector3(horizontalInput, 0f, verticalInput) * speed * Time.deltaTime;
         transform.Translate(movement);
+        // Atualiza a variável isMoving com base no movimento calculado
+        bool isMoving = movement.magnitude > 0.01f;
+
+        // Retorna a estrutura MovementInfo com as informações de movimento
+        return new MovementInfo { movement = movement, isMoving = isMoving };
+
     }
 
     void RotatePlayerWithMouse()
