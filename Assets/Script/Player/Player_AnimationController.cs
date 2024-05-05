@@ -28,6 +28,11 @@ public class Player_AnimationController : MonoBehaviour
 
     void Update()
     {
+        MovemantAnimation();
+    }
+
+    private void MovemantAnimation()
+    {
         // Chama o método MovePlayer() e obtém as informações de movimento
         Player_Movement.MovementInfo movementInfo = playerMovement.MovePlayer();
 
@@ -39,14 +44,14 @@ public class Player_AnimationController : MonoBehaviour
         {
             animator.SetFloat("Speed", 0f);
         }
-        else if(isMoving)
+        else if (isMoving)
         {
             animator.SetFloat("Speed", 0.5f);
         }
         if (isMoving && playerMovement.speed > 5.1)
         {
             animator.SetFloat("Speed", 1f);
-            
+
         }
     }
 }
