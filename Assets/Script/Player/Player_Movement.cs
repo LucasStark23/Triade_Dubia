@@ -71,7 +71,7 @@ public class Player_Movement : MonoBehaviour
         }
         else if (Input.GetKeyUp(KeyCode.LeftShift))
         {
-            speed = 5f;
+            speed = 2f;
         }
     }
 

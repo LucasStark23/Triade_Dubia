@@ -48,7 +48,7 @@ public class Player_AnimationController : MonoBehaviour
         {
             animator.SetFloat("Speed", 0.5f);
         }
-        if (isMoving && playerMovement.speed > 5.1)
+        if (isMoving && playerMovement.speed > 2.1)
         {
             animator.SetFloat("Speed", 1f);
 
