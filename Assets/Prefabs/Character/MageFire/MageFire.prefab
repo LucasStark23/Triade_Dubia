@@ -772,6 +772,7 @@ GameObject:
   - component: {fileID: 6812587588914250786}
   - component: {fileID: 711295653935323357}
   - component: {fileID: 5394930115747024140}
+  - component: {fileID: -2937513935429335747}
   m_Layer: 7
   m_Name: MageFire
   m_TagString: Player
@@ -896,6 +897,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c07791e733b24c94eb99588725f4e7f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-2937513935429335747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2971446708529004279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c45fd004b8180ae45a3cdd8a28ed9b0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  maxLife: 100
 --- !u!1 &3461995612229841036
 GameObject:
   m_ObjectHideFlags: 0
