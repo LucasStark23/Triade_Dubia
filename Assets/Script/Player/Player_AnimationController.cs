@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player_AnimationController : MonoBehaviour
 {
     private Player_Movement playerMovement; // Referência ao script de movimentação
-    private Animator animator; // Referência ao componente Animator
+    public Animator animator; // Referência ao componente Animator
 
     void Start()
     {
