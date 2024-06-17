@@ -622,9 +622,6 @@ GameObject:
   - component: {fileID: 3642524029849529179}
   - component: {fileID: 9010693707252428677}
   - component: {fileID: 6855787378332933658}
-  - component: {fileID: 9163469250252030693}
-  - component: {fileID: -7871819440366926343}
-  - component: {fileID: -1095333191614895237}
   m_Layer: 7
   m_Name: "Cl\xE9rigo Natural"
   m_TagString: Player
@@ -750,54 +747,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
---- !u!114 &9163469250252030693
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2754563035846705617}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: daefd1da0a058a8458de09df64079998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 0}
---- !u!114 &-7871819440366926343
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2754563035846705617}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d45fde7d57cba24282949056035c1cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterName: "Cl\xE9rigo Natural"
-  maxHealth: 8
-  currentHealth: 8
-  attackDamage: 1
---- !u!114 &-1095333191614895237
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2754563035846705617}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f05e44095f0d782498a2a67cfb699602, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterName: "Cl\xE9rigo Natural"
-  maxHealth: 8
-  currentHealth: 8
-  attackDamage: 1
-  cooldownVivaPorMim: 2
-  cooldownMorramPorEles: 2
-  cooldownTrocaDaDor: 2
 --- !u!1 &2819750285385236037
 GameObject:
   m_ObjectHideFlags: 0

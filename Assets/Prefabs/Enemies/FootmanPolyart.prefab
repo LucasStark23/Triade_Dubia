@@ -105,10 +105,13 @@ GameObject:
   m_Component:
   - component: {fileID: 8710155818339677827}
   - component: {fileID: 4938669374895659959}
-  - component: {fileID: 2619067649708995072}
+  - component: {fileID: 6366087921054819479}
+  - component: {fileID: 681086226479859247}
+  - component: {fileID: 3346447891941454949}
+  - component: {fileID: 6560582613944476230}
   m_Layer: 0
   m_Name: FootmanPolyart
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -151,7 +154,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &2619067649708995072
+--- !u!114 &6366087921054819479
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -160,13 +163,76 @@ MonoBehaviour:
   m_GameObject: {fileID: 2962792792651078524}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d45fde7d57cba24282949056035c1cc, type: 3}
+  m_Script: {fileID: 11500000, guid: c45fd004b8180ae45a3cdd8a28ed9b0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: Lancer
-  maxHealth: 8
-  currentHealth: 8
-  attackDamage: 2
+  healthBar: {fileID: 0}
+  maxLife: 8
+--- !u!114 &681086226479859247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2962792792651078524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c40b834ea010b734ba9b3a2a5219b8db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  speed: 10
+  damage: 1
+--- !u!136 &3346447891941454949
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2962792792651078524}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 1.954055
+  m_Direction: 1
+  m_Center: {x: -0, y: 0.95405453, z: -0}
+--- !u!54 &6560582613944476230
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2962792792651078524}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &3088301307780473718
 GameObject:
   m_ObjectHideFlags: 0

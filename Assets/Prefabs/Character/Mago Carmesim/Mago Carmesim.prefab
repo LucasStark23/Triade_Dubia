@@ -836,8 +836,9 @@ GameObject:
   - component: {fileID: 711295653935323357}
   - component: {fileID: 5394930115747024140}
   - component: {fileID: -2937513935429335747}
-  - component: {fileID: 1351850780929399476}
-  - component: {fileID: 6914290343067865666}
+  - component: {fileID: 4968776487854879620}
+  - component: {fileID: 6306260093117369338}
+  - component: {fileID: 1007350739296635901}
   m_Layer: 7
   m_Name: Mago Carmesim
   m_TagString: Player
@@ -978,7 +979,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   maxLife: 8
---- !u!114 &1351850780929399476
+--- !u!114 &4968776487854879620
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -987,14 +988,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2971446708529004279}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d45fde7d57cba24282949056035c1cc, type: 3}
+  m_Script: {fileID: 11500000, guid: da039cceb9bf9a14cad189fc08588708, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: Mago Carmesim
-  maxHealth: 10
-  currentHealth: 10
-  attackDamage: 2
---- !u!114 &6914290343067865666
+  animator: {fileID: 0}
+  target: {fileID: 0}
+  speed: 0
+  startPoint: {x: 0, y: 0, z: 0}
+--- !u!114 &6306260093117369338
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1003,15 +1004,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 2971446708529004279}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4ec01090956bb84fbeeb90c7a23abb6, type: 3}
+  m_Script: {fileID: 11500000, guid: dd8be0c7f20a4184983e9b43a6497e21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: Mago Carmesim
-  maxHealth: 10
-  currentHealth: 10
-  attackDamage: 2
-  cooldownNox: 2
-  cooldownNoxZero: 4
+  selectedColor: {r: 0.37255245, g: 0.735849, b: 0.38874388, a: 1}
+  buttonsGO:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!114 &1007350739296635901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2971446708529004279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 980e507264969a64fa1c0f8bb74ab37c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 4968776487854879620}
+  playerWeapon: {fileID: 6306260093117369338}
+  playerMovement: {fileID: 711295653935323357}
 --- !u!1 &3461995612229841036
 GameObject:
   m_ObjectHideFlags: 0
@@ -2825,7 +2840,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1553503861495769845, guid: bf386b53e16a70e41b4b461695059c35, type: 3}
+    - {fileID: 3298618639923811602, guid: bf386b53e16a70e41b4b461695059c35, type: 3}
+    - {fileID: 7432835528757798478, guid: bf386b53e16a70e41b4b461695059c35, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:

@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class Player_AnimationController : MonoBehaviour
 {
-    private Player_Movement playerMovement; // Referência ao script de movimentação
-    public Animator animator; // Referência ao componente Animator
+    private Player_Movement playerMovement; 
+    public Animator animator; 
 
     void Start()
     {
-        // Obtém referências para o script de movimentação e para o componente Animator
+        
         playerMovement = GetComponent<Player_Movement>();
         animator = GetComponent<Animator>();
 
-        // Verifica se as referências foram obtidas com sucesso
+        
         if (playerMovement == null)
         {
             Debug.LogError("Player_Movement script not found!");
